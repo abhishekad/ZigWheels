@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ZigWheelsTestSuite"> 
+	<test thread-count="5" parallel="tests" name="BikeDetailsTest">
+
+		<groups>
+			<run>
+				<include name="Smoke Test"/>
+				<include name="Regression Test"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.bikes.testCases.BikeDetailsTest" />
+		</classes>
+		
+	</test>
+	<test thread-count="5" parallel="tests" name="LoginTest"> <!-- Test -->
+	<groups>
+			<run>
+				<include name="Smoke Test"/>
+				<include name="Regression Test"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.bikes.testCases.LoginTest" />
+		</classes>
+		</test>
+		<test thread-count="5" parallel="tests" name="UsedCarsTest"> <!-- Test -->
+	<groups>
+			<run>
+				<include name="Smoke Test"/>
+				<include name="Regression Test"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="com.bikes.testCases.UsedCarsTest" />
+		</classes>
+		</test>
+</suite> <!-- Suite -->
